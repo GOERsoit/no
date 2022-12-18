@@ -1,5 +1,44 @@
 <!DOCTYPE html>
 <html>
+<SCRIPT language=JavaScript> 
+ 
+	function password() { 
+	 
+	var testV = 1; 
+	 
+	var pass1 = prompt('请输入密码:',''); 
+	 
+	while (testV < 3) { 
+	 
+	if (!pass1) 
+	 
+	history.go(-1); 
+	 
+	if (pass1 == "这里输入你想设置的密码") { 
+	 
+	alert('密码正确!'); 
+	 
+	break; 
+	 
+	} 
+	 
+	testV+=-1; 
+	 
+	var pass1 = prompt('密码错误!请重新输入:'); 
+	 
+	} 
+	 
+	if (pass1!="password" & testV ==3) 
+	 
+	history.go(-1); 
+	 
+	return " "; 
+	 
+	} 
+	 
+	document.write(password()); 
+	 
+	</SCRIPT>
 <head>
 <meta charset="utf-8">
  <meta name="Keywords" content="HTML5游戏,HTML5网页游戏,HTML5水果忍者,HTML5版水果忍者">
@@ -8,7 +47,7 @@
 <meta name="apple-mobile-web-app-capable" content="yes">
 <meta name="apple-mobile-web-app-status-bar-style" content="black">
 <link rel="stylesheet" href="images/index.css">
-<title>水果忍者</title>
+<title>开玩笑</title>
 <!--[if lt IE 9]><script>document.createElement("canvas");</script><![endif]-->
 </head>
 <body>
